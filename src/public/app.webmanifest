@@ -1,0 +1,48 @@
+{
+  "id": "restaurant-lite-pwa-1",
+  "start_url": "index.html?launcher=true",
+  "name": "Restaurant App Lite",
+  "short_name": "Restaurant Lite",
+  "description": "Free Restaurant App for you",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#D84315",
+  "icons": [
+    {
+      "src": "/icons/restaurant-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/restaurant-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/restaurant-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/restaurant-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/restaurant-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/restaurant-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

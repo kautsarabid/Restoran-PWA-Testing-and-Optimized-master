@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #F2E4DC;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: whitesmoke;
+  color: #594539;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* HEADER SECTION */
+header {
+  padding: 2em;
+  background-color: #594539e3;
+  box-shadow: 0px 3px 10px 1px rgba(89, 69, 57, 0.63);
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(89, 69, 57, 0.63);
+  -moz-box-shadow: 0px 3px 10px 1px rgba(89, 69, 57, 0.63);
+}
+
+header nav h1 {
+  color: whitesmoke;
+  font-family: 'Carter One', cursive;
+  font-size: 2.5em;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.3em;
+  align-items: center;
+}
+
+nav ul {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1em;
+}
+
+nav ul li {
+  text-align: center;
+  line-height: 44px;
+  width: 100%;
+}
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 1.3em;
+  font-size: 1.2em;
+}
+
+/* AKHIR HEADER SECTION */
+
+
+/* HAMBURGER MENU */
+nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+
+.menu-toggle span {
+  display: block;
+  background-color: #f2f2ff;
+  width: 44px;
+  height: 6px;
+  border-radius: 10px;
+}
+
+/* AKHIR HAMBURGER MENU */
+
+/* HERO SECTION */
+main .hero-section {
+  background-color: #261F1A;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/images/heros/hero-image_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  color: whitesmoke;
+}
+
+main .hero-section h2 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Carter One', cursive;
+  font-size: 3em;
+  letter-spacing: .12em;
+}
+
+main .hero-section .deskripsi-hero-section {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* TOP RESTAURANT SECTION */
+main .top-restaurant {
+  width: 100%;
+  padding: 0 2em;
+}
+
+main .top-restaurant h3 {
+  width: 100%;
+  margin: 1em 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+main .top-restaurant .list-restaurant {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .top-restaurant .list-restaurant h4 {
+  font-size: 1.66em;
+  font-weight: 600;
+  color: #261F1A;
+}
+
+main .top-restaurant .list-restaurant p {
+  font-size: 1.2em;
+  color: #261F1A;
+}
+
+main .restaurant-list {
+  position: relative;
+  width: 30%;
+  height: 50vh;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: box-shadow .4s ease-in-out;
+}
+
+main .restaurant-list:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main .restaurant-list img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+main .restaurant-list .deskripsi-restaurant-list {
+  padding: .6em .4em;
+}
+
+main .restaurant-list .restaurant-list-rating {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em;
+  width: 18%;
+  height: 10%;
+  background-color: #D9B504;
+  border-radius: 0 15px 15px 0;
+  font-size: 14px !important;
+  font-weight: 600;
+  box-shadow: -3px 2px 4px 0px rgba(89, 69, 57, 0.75) inset;
+}
+
+/*
+  INPUT SECTION PADA FAVORITE
+*/
+
+.restaurant-item__not__found {
+  font-weight: bold;
+  font-size: .8em;
+}
+
+.search-button {
+  margin: 2em auto 1em auto;
+  display: block;
+  padding: 2em;
+  width: 70%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/* Detail */
+.title-detail {
+  display: block;
+  width: 45%;
+  border-radius: 0 20px 20px 0;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+  background-color: #693e24de;
+  color: whitesmoke;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title-restaurant {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.content-detail-restaurant {
+  display: flex;
+  width: 100%;
+  padding: 2em;
+}
+
+.content-detail-restaurant img {
+  width: 50%;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content-detail-restaurant .info {
+  width: 50%;
+  padding-left: 1em;
+}
+
+.info h3 {
+  font-size: 1.5em;
+  margin-bottom: .3em;
+}
+
+.info li {
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(121, 118, 118, 0.871);
+  padding-bottom: .4em;
+}
+
+/* REVIEWS */
+
+.review {
+  padding: 1.5em;
+  margin: 1.5em;
+  border-radius: 15px;
+  background-color: #f9f8f8;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.review .posisi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review .name {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: .2em;
+}
+
+.review .date {
+  color: #797979;
+  font-size: .8em;
+}
+
+img {
+  display: block;
+}
+
+/* LIKE */
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: #594539e3;
+}
+
+footer p {
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 500;
+}
